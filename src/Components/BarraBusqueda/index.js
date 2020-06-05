@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './BarraBusqueda.css'
+
 function BarraBusqueda({setQuery, query, search}) {
     return (
         <input 
