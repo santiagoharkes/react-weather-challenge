@@ -1,0 +1,124 @@
+.cityCard {
+  background-color: rgba(36, 36, 36, 0.5);
+  width: auto;
+  height: 100%;
+  padding: 55px 15px 0;
+  text-align: center;
+  margin: 10px 10px;
+  position: relative;
+  border-radius: 25px;
+}
+
+.cityCard-info {
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cityCard-info__name {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  margin: 0 0 5px;
+}
+
+.cityCard-info__temperatura {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 4vw;
+  font-weight: 900;
+  text-shadow: 3px 6px 10px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 0 20px;
+}
+
+.cityCard-info__temperatura span {
+  font-size: 3vw;
+  color: rgba(255, 255, 255, 0.616);
+}
+
+.cityCard-info__presyhum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.616);
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.cityCard-info__presyhum .presion {
+  min-width: 40%;
+  margin: 5px;
+}
+
+.cityCard-info__presyhum .humedad {
+  min-width: 40%;
+  margin: 5px;
+}
+
+.cityCard-info__maxymin {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cityCard-info__maxymin .maxima {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cityCard-info__maxymin .minima {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cityCard-info__maxymin .m {
+  color: white;
+  font-size: 20px;
+}
+
+.cityCard-info__maxymin .t {
+  width: auto;
+  border-radius: 20px;
+  padding: 5px 5px;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 6px 10px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 0 20px;
+}
+
+.close {
+  font-size: 25px;
+  background-color: rgb(85, 25, 25);
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .cityCard-info__temperatura {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,52 @@
+body #root {
+  background-color: rgb(38, 178, 233);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.45)
+  );
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.cityDetail {
+  background-color: rgb(38, 178, 233);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cityCardDetails {
+  background-color: rgba(36, 36, 36, 0.5);
+  min-width: 40%;
+  height: 100%;
+  padding: 55px 15px 0;
+  text-align: center;
+  margin: 10px 10px;
+  position: relative;
+  border-radius: 25px;
+}
+
+.cityCard-info__extra {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0 30px;
+  margin: 5px 0 20px;
+  color: white;
+}
+
+.mapGl {
+  border-radius: 25px;
+  min-width: 340px;
+  height: auto;
+  margin-bottom: 10px;
+}
