@@ -50,7 +50,7 @@ function CityDetails(props) {
                 {clima.name}
               </div>
               <div className="cityCard-info__temperatura">
-                {clima.main.temp}<span>ºc</span>
+                {clima.main.temp.toFixed(1)}<span>ºc</span>
               </div>
               <div className="cityCard-info__presyhum">
                 <div className="presion">
@@ -62,10 +62,10 @@ function CityDetails(props) {
               </div>
               <div className="cityCard-info__maxymin">
                 <div className="minima">
-                  <span className="m">Min:</span> <span className="t">{clima.main.temp_min}ºc</span>
+                  <span className="m">Min:</span> <span className="t">{clima.main.temp_min.toFixed(1)}ºc</span>
                 </div>
                 <div className="maxima">
-                  <span className="m">Máx:</span> <span className="t">{clima.main.temp_max}ºc</span>
+                  <span className="m">Máx:</span> <span className="t">{clima.main.temp_max.toFixed(1)}ºc</span>
                 </div>
               </div>
               <div className="cityCard-info__extra">

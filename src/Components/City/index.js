@@ -30,10 +30,10 @@ function City({props, deleteCity}) {
                     </div>
                     <div className="cityCard-info__maxymin">
                         <div className="minima">
-                            <span className="m">Min:</span> <span className="t">{props.main.temp_min}ºc</span>
+                            <span className="m">Min:</span> <span className="t">{props.main.temp_min.toFixed(1)}ºc</span>
                         </div>
                         <div className="maxima">
-                            <span className="m">Máx:</span> <span className="t">{props.main.temp_max}ºc</span>
+                            <span className="m">Máx:</span> <span className="t">{props.main.temp_max.toFixed(1)}ºc</span>
                         </div>
                     </div>
             </Link>
